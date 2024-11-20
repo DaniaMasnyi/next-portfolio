@@ -62,8 +62,8 @@ export const HeroSection = () => {
             Creating Impactful Online Experiences
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Turning designs into high-performance web platforms. Let’s discuss
-            your next project.
+            Turning designs into high-performance web platforms. Ready to
+            collaborate on your vision.
           </p>
         </div>
         <div className="flex flex-col items-center mt-8 gap-4 md:flex-row justify-center">
