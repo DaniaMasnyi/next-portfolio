@@ -50,7 +50,7 @@ export const HeroSection = () => {
             className="size-[110px] object-cover"
             alt="Laptop"
           />
-          <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 mt-[-2%] inline-flex items-center gap-4 rounded-lg">
+          <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 mt-[-6%] md:mt-[-3%] lg:mt-[-2%] inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full"></div>
             <div className="text-sm font-medium">
               Available to bring your vision to life
