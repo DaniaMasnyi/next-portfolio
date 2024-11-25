@@ -103,9 +103,8 @@ export const AboutSection = () => {
                 title="My Toolbox"
                 description="Explore the technologies and tools I use to craft exceptional
                 digital experiences."
-                className=""
               />
-              <ToolboxItems items={toolboxItems} className="" />
+              <ToolboxItems items={toolboxItems} />
               <ToolboxItems
                 items={toolboxItems}
                 className="mt-6"
@@ -113,30 +112,64 @@ export const AboutSection = () => {
               />
             </Card>
           </div>
-          <Card className="h-[320px] p-0 flex flex-col">
-            <CardHeader
-              className="px-6 py-6"
-              title="Beyond The Code"
-              description="Explore my interests and hobbies"
-            />
-            <div className="relative flex-1">
-              {hobbies.map((hobby) => (
-                <div
-                  key={hobby.title}
-                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
-                  style={{
-                    left: hobby.left,
-                    top: hobby.top,
-                  }}
-                >
-                  <span className="font-medium text-gray-950">
-                    {hobby.title}
-                  </span>
-                  <span>{hobby.emoji}</span>
-                </div>
-              ))}
-            </div>
-          </Card>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            <Card className="h-[320px] md:col-span-3 p-0 flex flex-col">
+              <CardHeader
+                className="px-6 py-6"
+                title="Beyond The Code"
+                description="Explore my interests and hobbies"
+              />
+              <div className="relative flex-1">
+                {hobbies.map((hobby) => (
+                  <div
+                    key={hobby.title}
+                    className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute shadow-lg"
+                    style={{
+                      left: hobby.left,
+                      top: hobby.top,
+                    }}
+                  >
+                    <span className="font-medium text-gray-950">
+                      {hobby.title}
+                    </span>
+                    <span>{hobby.emoji}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+            <Card className="h-[320px] md:col-span-2">
+              <CardHeader title="Education" description="" />
+              <div className="px-6 mt-[-2%] md:mt-[-12%] lg:mt-[-2%] space-y-4">
+                <p className="font-semibold text-lg text-emerald-300">
+                  Vasyl Stefanyk Precarpathian National University
+                </p>
+                <ul className="list-disc list-inside text-white/80 leading-relaxed">
+                  <li>
+                    <a
+                      href="https://www.udemy.com/course/nextjs-react-the-complete-guide/?couponCode=BFCPSALE24"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-sky-400 hover:underline"
+                    >
+                      Next.js 15 & React - The Complete Guide
+                    </a>{' '}
+                    - Udemy
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.udemy.com/course/typescript-the-complete-developers-guide/?couponCode=BFCPSALE24"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-sky-400 hover:underline"
+                    >
+                      Typescript: The Complete Developer's Guide
+                    </a>{' '}
+                    - Udemy
+                  </li>
+                </ul>
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
