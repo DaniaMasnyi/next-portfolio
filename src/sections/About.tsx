@@ -1,6 +1,5 @@
 import { SectionHeader } from '@/components/SectionHeader';
 import { Card } from '@/components/Card';
-import StarIcon from '@/assets/icons/star.svg';
 import bookImage from '@/assets/images/book-cover.png';
 import Image from 'next/image';
 import JavascriptIcon from '@/assets/icons/square-js.svg';
@@ -11,31 +10,32 @@ import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
 import { TechIcon } from '@/components/TechIcon';
 import { CardHeader } from '@/components/CardHeader';
+import { ElementType } from 'react';
 
-const toolboxItems = [
+const toolboxItems: { title: string; iconType: ElementType }[] = [
   {
     title: 'Javascript',
-    iconType: 'JavascriptIcon',
+    iconType: JavascriptIcon,
   },
   {
     title: 'HTML5',
-    iconType: 'HTMLIcon',
+    iconType: HTMLIcon,
   },
   {
     title: 'CSS3',
-    iconType: 'CSSIcon',
+    iconType: CssIcon,
   },
   {
     title: 'React',
-    iconType: 'ReactIcon',
+    iconType: ReactIcon,
   },
   {
     title: 'Chrome',
-    iconType: 'ChromeIcon',
+    iconType: ChromeIcon,
   },
   {
     title: 'Github',
-    iconType: 'GithubIcon',
+    iconType: GithubIcon,
   },
 ];
 
