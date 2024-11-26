@@ -19,7 +19,6 @@ export const HeroSection = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
 
-        {/* Fixed HeroOrbit elements */}
         <HeroOrbit
           size={800}
           rotation={10}
@@ -119,6 +118,37 @@ export const HeroSection = () => {
           spinDuration="3s"
         >
           <SparkleIcon className="size-4 text-emerald-300/20" />
+        </HeroOrbit>
+
+        <HeroOrbit
+          size={600}
+          rotation={50}
+          shouldOrbit={true}
+          orbitDuration="50s"
+          shouldSpin={true}
+          spinDuration="3s"
+        >
+          <SparkleIcon className="size-6 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit
+          size={750}
+          rotation={120}
+          shouldOrbit={true}
+          orbitDuration="52s"
+          shouldSpin={true}
+          spinDuration="3s"
+        >
+          <SparkleIcon className="size-10 text-emerald-300/20" />
+        </HeroOrbit>
+        <HeroOrbit
+          size={530}
+          rotation={300}
+          shouldOrbit={true}
+          orbitDuration="48s"
+          shouldSpin={true}
+          spinDuration="3s"
+        >
+          <SparkleIcon className="size-8 text-emerald-300/20" />
         </HeroOrbit>
       </div>
       <div className="container">
