@@ -2,7 +2,7 @@
 
 import { SectionHeader } from '@/components/SectionHeader';
 import { Card } from '@/components/Card';
-import bookImage from '@/assets/images/book-cover.png';
+import bookImage2 from '@/assets/images/book-image.png';
 import Image from 'next/image';
 import JavascriptIcon from '@/assets/icons/square-js.svg';
 import HTMLIcon from '@/assets/icons/html5.svg';
@@ -99,7 +99,7 @@ export const AboutSection = () => {
                 description="Explore the books shaping my perspective"
               />
               <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Book cover" />
+                <Image src={bookImage2} alt="Book cover" />
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3">
