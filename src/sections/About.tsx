@@ -1,3 +1,5 @@
+'use client';
+
 import { SectionHeader } from '@/components/SectionHeader';
 import { Card } from '@/components/Card';
 import bookImage from '@/assets/images/book-cover.png';
@@ -9,8 +11,9 @@ import ReactIcon from '@/assets/icons/react.svg';
 import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
 import { CardHeader } from '@/components/CardHeader';
-import { ElementType } from 'react';
+import { ElementType, useRef } from 'react';
 import { ToolboxItems } from '@/components/ToolboxItems';
+import { motion } from 'framer-motion';
 
 const toolboxItems: { title: string; iconType: ElementType }[] = [
   {
@@ -79,6 +82,7 @@ const hobbies = [
 ];
 
 export const AboutSection = () => {
+  const constrainRef = useRef(null);
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
@@ -104,11 +108,15 @@ export const AboutSection = () => {
                 description="Explore the technologies and tools I use to craft exceptional
                 digital experiences."
               />
-              <ToolboxItems items={toolboxItems} />
+              <ToolboxItems
+                items={toolboxItems}
+                className=""
+                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+              />
               <ToolboxItems
                 items={toolboxItems}
                 className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2"
+                itemsWrapperClassName="animate-move-right [animation-duration:30s]"
               />
             </Card>
           </div>
@@ -119,21 +127,23 @@ export const AboutSection = () => {
                 title="Beyond The Code"
                 description="Explore my interests and hobbies"
               />
-              <div className="relative flex-1">
+              <div className="relative flex-1" ref={constrainRef}>
                 {hobbies.map((hobby) => (
-                  <div
+                  <motion.div
                     key={hobby.title}
                     className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute shadow-lg"
                     style={{
                       left: hobby.left,
                       top: hobby.top,
                     }}
+                    drag
+                    dragConstraints={constrainRef}
                   >
                     <span className="font-medium text-gray-950">
                       {hobby.title}
                     </span>
                     <span>{hobby.emoji}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </Card>
