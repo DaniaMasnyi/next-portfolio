@@ -162,7 +162,7 @@ export const AboutSection = () => {
                       rel="noopener noreferrer"
                       className="font-medium text-sky-400 hover:underline"
                     >
-                      Typescript: The Complete Developer's Guide
+                      Typescript: The Complete Developers Guide
                     </a>{' '}
                     - Udemy
                   </li>
