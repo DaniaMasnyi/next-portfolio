@@ -166,17 +166,17 @@ export const HeroSection = () => {
               <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
             </div>
             <div className="text-sm font-medium">
-              Available to create your vision
+              Ready to create your vision
             </div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl">
-            Creating Impactful Online Experiences
+          <h1 className="font-serif text-4xl text-center mt-8 tracking-wide md:text-5xl">
+            Danyil Masnyi
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Turning designs into high-performance web platforms. Ready to
-            collaborate on your vision.
+            Bringing your ideas to life with modern technology and innovative
+            design. Let’s turn your vision into reality.
           </p>
         </div>
         <div className="flex flex-col items-center mt-8 gap-4 md:flex-row justify-center">

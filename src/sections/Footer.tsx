@@ -9,10 +9,6 @@ const footerLinks = [
     title: 'Github',
     href: 'https://github.com/DaniaMasnyi',
   },
-  {
-    title: 'Email',
-    href: 'mailto:danyamas07@gmail.com',
-  },
 ];
 
 export const Footer = () => {

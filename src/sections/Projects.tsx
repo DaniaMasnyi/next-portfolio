@@ -1,6 +1,6 @@
-import darkSaasLandingPage from '@/assets/images/dark-saas-landing-page.png';
-import lightSaasLandingPage from '@/assets/images/light-saas-landing-page.png';
-import aiStartupLandingPage from '@/assets/images/ai-startup-landing-page.png';
+import portfolio from '@/assets/images/project1.png';
+import headlights from '@/assets/images/project2.png';
+import airbnb from '@/assets/images/project3.png';
 import Image from 'next/image';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
@@ -9,40 +9,40 @@ import { Card } from '@/components/Card';
 
 const portfolioProjects = [
   {
-    company: 'Acme Corp',
-    year: '2022',
-    title: 'Dark Saas Landing Page',
+    company: 'MRPL IT INC',
+    year: '2024',
+    title: 'Calgary Headlights Recycling',
     results: [
-      { title: 'Enhanced user experience by 40%' },
-      { title: 'Improved site speed by 50%' },
-      { title: 'Increased mobile traffic by 35%' },
+      { title: 'Single-page application built with Next.js and Tailwind' },
+      { title: 'Showcased products with a clean, modern design' },
+      { title: 'Optimized for mobile and desktop devices' },
     ],
-    link: 'https://youtu.be/4k7IdSLxh6w',
-    image: darkSaasLandingPage,
+    link: 'https://calgary-headlights.vercel.app/',
+    image: headlights,
   },
   {
-    company: 'Innovative Co',
-    year: '2021',
-    title: 'Light Saas Landing Page',
+    company: '',
+    year: '2024',
+    title: 'NextJS Airbnb Clone',
     results: [
-      { title: 'Boosted sales by 20%' },
-      { title: 'Expanded customer reach by 35%' },
-      { title: 'Increased brand awareness by 15%' },
+      { title: 'Dynamic listings powered by Next.js and Prisma' },
+      { title: 'Integrated authentication and booking system' },
+      { title: 'Utilized Tailwind for modern and intuitive UI' },
     ],
-    link: 'https://youtu.be/7hi5zwO75yc',
-    image: lightSaasLandingPage,
+    link: 'https://github.com/DaniaMasnyi/next14-airbnb-clone',
+    image: airbnb,
   },
   {
-    company: 'Quantum Dynamics',
-    year: '2023',
-    title: 'AI Startup Landing Page',
+    company: '',
+    year: '2024',
+    title: 'NextJS Portfolio',
     results: [
-      { title: 'Enhanced user experience by 40%' },
-      { title: 'Improved site speed by 50%' },
-      { title: 'Increased mobile traffic by 35%' },
+      { title: 'Built with Next.js and Tailwind for optimized performance' },
+      { title: 'Fully responsive design for seamless user experience' },
+      { title: 'Integrated animations with minimal effort' },
     ],
-    link: 'https://youtu.be/Z7I5uSRHMHg',
-    image: aiStartupLandingPage,
+    link: 'https://github.com/DaniaMasnyi/next-portfolio',
+    image: portfolio,
   },
 ];
 
@@ -59,7 +59,7 @@ export const ProjectsSection = () => {
           Featured Projects
         </h2>
         <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">
-          See how I transformed concepts into engaging digital experiences.
+          Explore how I’ve turned ideas into high-performance web platforms
         </p>
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
           {portfolioProjects.map((project, projectIndex) => (
@@ -100,7 +100,7 @@ export const ProjectsSection = () => {
                   </ul>
                   <a href={project.link}>
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      <span>Visit Live Site</span>
+                      <span>😍 I want to see</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
