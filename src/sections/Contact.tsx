@@ -27,7 +27,7 @@ export const ContactSection = () => {
                 href="mailto:danyamas07@gmail.com"
                 className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-950"
               >
-                <span className="font-semibold">Contact Me</span>
+                <span className="font-semibold">📤  Contact Me</span>
                 <ArrowUpRightIcon className="size-4" />
               </a>
             </div>

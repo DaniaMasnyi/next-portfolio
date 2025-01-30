@@ -12,7 +12,7 @@ const portfolioProjects = [
   {
     company: 'Penny',
     year: '2025',
-    title: 'Penny',
+    title: 'Penny 🪙',
     results: [
       { title: 'Enormously fast application using Turborepo' },
       { title: 'Provided with features for future AI integration' },
@@ -24,7 +24,7 @@ const portfolioProjects = [
   {
     company: 'MRPL IT INC',
     year: '2024',
-    title: 'Calgary Headlights Recycling',
+    title: 'Calgary Headlights Recycling 🏎️',
     results: [
       { title: 'Single-page application built with Next.js and Tailwind' },
       { title: 'Showcased products with a clean, modern design' },
@@ -36,7 +36,7 @@ const portfolioProjects = [
   {
     company: '',
     year: '2024',
-    title: 'NextJS Airbnb Clone',
+    title: 'NextJS Airbnb Clone 🏠',
     results: [
       { title: 'Dynamic listings powered by Next.js and Prisma' },
       { title: 'Integrated authentication and booking system' },
@@ -48,7 +48,7 @@ const portfolioProjects = [
   {
     company: '',
     year: '2024',
-    title: 'NextJS Portfolio',
+    title: 'NextJS Portfolio 💼',
     results: [
       { title: 'Built with Next.js and Tailwind for optimized performance' },
       { title: 'Fully responsive design for seamless user experience' },
@@ -69,7 +69,7 @@ export const ProjectsSection = () => {
           </p>
         </div>
         <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">
-          Featured Projects
+          Featured Projects 💼
         </h2>
         <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">
           Explore how I’ve turned ideas into high-performance web platforms

@@ -10,6 +10,10 @@ import GithubIcon from '@/assets/icons/github.svg';
 import NextJsIcon from '@/assets/icons/nextjs.svg'; // Новий SVG
 import TypeScriptIcon from '@/assets/icons/typescript.svg'; // Новий SVG
 import TailwindIcon from '@/assets/icons/tailwind.svg'; // Новий SVG
+import shadcn from '@/assets/icons/shadcn.svg'
+import ChatGPT from '@/assets/icons/chatgpt.svg';
+import vercel from '@/assets/icons/vercel.svg';
+import mongodb from '@/assets/icons/mongodb.svg';
 import { CardHeader } from '@/components/CardHeader';
 import { ElementType, useRef } from 'react';
 import { ToolboxItems } from '@/components/ToolboxItems';
@@ -39,6 +43,14 @@ const toolboxItems: { title: string; iconType: ElementType }[] = [
   {
     title: 'GitHub',
     iconType: GithubIcon,
+  },
+  {
+    title: 'OpenAI API',
+    iconType: ChatGPT,
+  },
+  {
+    title: 'Vercel',
+    iconType: vercel,
   },
 ];
 
@@ -82,7 +94,7 @@ export const AboutSection = () => {
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
-          title="A Glimpse Into My World"
+          title="A Glimpse Into My World 🌍"
           description="Learn more about who I am, what I do and what inspires me"
         />
         <div className="mt-20 flex flex-col gap-8">
@@ -145,7 +157,7 @@ export const AboutSection = () => {
               <CardHeader title="Education" description="" />
               <div className="px-6 mt-[-2%] md:mt-[-12%] lg:mt-[-2%] space-y-4">
                 <p className="font-semibold text-lg text-emerald-300">
-                  Vasyl Stefanyk Precarpathian National University
+                  🏫 Vasyl Stefanyk Precarpathian National University
                 </p>
                 <ul className="list-disc list-inside text-white/80 leading-relaxed">
                   <li>
