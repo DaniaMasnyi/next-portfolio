@@ -10,10 +10,8 @@ import GithubIcon from '@/assets/icons/github.svg';
 import NextJsIcon from '@/assets/icons/nextjs.svg'; // Новий SVG
 import TypeScriptIcon from '@/assets/icons/typescript.svg'; // Новий SVG
 import TailwindIcon from '@/assets/icons/tailwind.svg'; // Новий SVG
-import shadcn from '@/assets/icons/shadcn.svg'
 import ChatGPT from '@/assets/icons/chatgpt.svg';
 import vercel from '@/assets/icons/vercel.svg';
-import mongodb from '@/assets/icons/mongodb.svg';
 import { CardHeader } from '@/components/CardHeader';
 import { ElementType, useRef } from 'react';
 import { ToolboxItems } from '@/components/ToolboxItems';
