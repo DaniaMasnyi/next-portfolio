@@ -1,6 +1,7 @@
 import portfolio from '@/assets/images/project1.png';
 import headlights from '@/assets/images/project2.png';
 import airbnb from '@/assets/images/project3.png';
+import penny from '@/assets/images/penny.png'
 import Image from 'next/image';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
@@ -8,6 +9,18 @@ import grainImage from '@/assets/images/grain.jpg';
 import { Card } from '@/components/Card';
 
 const portfolioProjects = [
+  {
+    company: 'Penny',
+    year: '2025',
+    title: 'Penny',
+    results: [
+      { title: 'Enormously fast application using Turborepo' },
+      { title: 'Provided with features for future AI integration' },
+      { title: 'Created for mobile-first design' },
+    ],
+    link: 'https://penny-production-five.vercel.app/',
+    image: penny,
+  },
   {
     company: 'MRPL IT INC',
     year: '2024',
@@ -100,7 +113,7 @@ export const ProjectsSection = () => {
                   </ul>
                   <a href={project.link}>
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      <span>😍 I want to see</span>
+                      <span>✨ I want to see 😍</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
@@ -109,7 +122,7 @@ export const ProjectsSection = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none rounded-lg"
                   />
                 </div>
               </div>
