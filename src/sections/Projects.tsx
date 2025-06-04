@@ -20,7 +20,7 @@ const portfolioProjects = [
       { title: 'AI-driven dashboard for advanced analytics and insights' },
       { title: 'Integrated dual yacht APIs for rich and dynamic content' },
     ],
-    link: 'https://https://gyachts-cms.vercel.app',
+    link: 'https://gyachts-cms.vercel.app',
     image: project5,
   },
   {
