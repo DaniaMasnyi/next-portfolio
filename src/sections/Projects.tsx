@@ -1,7 +1,9 @@
 import portfolio from '@/assets/images/project1.png';
 import headlights from '@/assets/images/project2.png';
 import airbnb from '@/assets/images/project3.png';
-import penny from '@/assets/images/penny.png'
+import project5 from '@/assets/images/project5.png';
+import project4 from '@/assets/images/project4.png';
+import penny from '@/assets/images/penny.png';
 import Image from 'next/image';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
@@ -9,6 +11,45 @@ import grainImage from '@/assets/images/grain.jpg';
 import { Card } from '@/components/Card';
 
 const portfolioProjects = [
+  {
+    company: 'G-Yachts',
+    year: '2025',
+    title: 'G-Yachts CMS',
+    results: [
+      { title: 'Built-in PDF brochure editor for seamless content updates' },
+      { title: 'AI-driven dashboard for advanced analytics and insights' },
+      { title: 'Integrated dual yacht APIs for rich and dynamic content' },
+    ],
+    link: 'https://https://gyachts-cms.vercel.app',
+    image: project5,
+  },
+  {
+    company: 'Monacair',
+    year: '2025',
+    title: 'Monacair',
+    results: [
+      { title: 'Integrated headless CMS powered by Payload' },
+      {
+        title:
+          'Developed a flexible flight booking system for multiple flight types',
+      },
+      { title: 'Deployed with scalable infrastructure using Kubernetes' },
+    ],
+    link: 'https://monacair.mc/',
+    image: project4,
+  },
+  {
+    company: '',
+    year: '2024',
+    title: 'NextJS Airbnb Clone 🏠',
+    results: [
+      { title: 'Dynamic listings powered by Next.js and Prisma' },
+      { title: 'Integrated authentication and booking system' },
+      { title: 'Utilized Tailwind for modern and intuitive UI' },
+    ],
+    link: 'https://github.com/DaniaMasnyi/next14-airbnb-clone',
+    image: airbnb,
+  },
   {
     company: 'Penny',
     year: '2025',
@@ -32,18 +73,6 @@ const portfolioProjects = [
     ],
     link: 'https://calgary-headlights.vercel.app/',
     image: headlights,
-  },
-  {
-    company: '',
-    year: '2024',
-    title: 'NextJS Airbnb Clone 🏠',
-    results: [
-      { title: 'Dynamic listings powered by Next.js and Prisma' },
-      { title: 'Integrated authentication and booking system' },
-      { title: 'Utilized Tailwind for modern and intuitive UI' },
-    ],
-    link: 'https://github.com/DaniaMasnyi/next14-airbnb-clone',
-    image: airbnb,
   },
   {
     company: '',

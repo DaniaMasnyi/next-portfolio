@@ -7,15 +7,17 @@ import Image from 'next/image';
 import JavascriptIcon from '@/assets/icons/square-js.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import GithubIcon from '@/assets/icons/github.svg';
-import NextJsIcon from '@/assets/icons/nextjs.svg'; // Новий SVG
-import TypeScriptIcon from '@/assets/icons/typescript.svg'; // Новий SVG
-import TailwindIcon from '@/assets/icons/tailwind.svg'; // Новий SVG
+import NextJsIcon from '@/assets/icons/nextjs.svg';
+import TypeScriptIcon from '@/assets/icons/typescript.svg';
+import TailwindIcon from '@/assets/icons/tailwind.svg';
 import ChatGPT from '@/assets/icons/chatgpt.svg';
 import vercel from '@/assets/icons/vercel.svg';
 import { CardHeader } from '@/components/CardHeader';
 import { ElementType, useRef } from 'react';
 import { ToolboxItems } from '@/components/ToolboxItems';
 import { motion } from 'framer-motion';
+import PayloadIcon from '@/assets/icons/payload.svg';
+import SupabaseIcon from '@/assets/icons/supabase.svg';
 
 const toolboxItems: { title: string; iconType: ElementType }[] = [
   {
@@ -37,6 +39,14 @@ const toolboxItems: { title: string; iconType: ElementType }[] = [
   {
     title: 'Tailwind CSS',
     iconType: TailwindIcon,
+  },
+  {
+    title: 'PayloadCMS',
+    iconType: PayloadIcon,
+  },
+  {
+    title: 'Supabase',
+    iconType: SupabaseIcon,
   },
   {
     title: 'GitHub',
